@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>BALANCE</pattern>
+<template>#bal#<get name="name"/>#0#0#0</template>
+</category>
+
+<category>
+<pattern>BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>AVAILABLE BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>AVAILABLE BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* AVAILABLE BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>*AVAILABLE BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>MY BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>MY BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* MY BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* MY BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>TELL BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>TELL BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* TELL BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* TELL BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>ACCOUNT BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>ACCOUNT BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* ACCOUNT BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* ACCOUNT BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>WALLET BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>WALLET BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* WALLET BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* WALLET BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>LEFT BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>LEFT BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* LEFT BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* LEFT BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+
+<category>
+<pattern>CURRENT BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>CURRENT BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* CURRENT BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* CURRENT BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>MONEY LEFT</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* MONEY LEFT</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>MONEY LEFT * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* MONEY LEFT * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>AMOUNT LEFT</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* AMOUNT LEFT</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>AMOUNT LEFT * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* AMOUNT LEFT * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>AMOUNT IN MY WALLET</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* AMOUNT IN MY WALLET</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>AMOUNT IN MY WALLET * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* AMOUNT IN MY WALLET * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>WHAT IS * BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>WHAT IS * BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>REMAINING BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* REMAINING BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>REMAINING BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* REMAINING BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>REMAINING AMOUNT</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* REMAINING AMOUNT</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>REMAINING AMOUNT *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* REMAINING AMOUNT *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>REMAINING CREDIT</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* REMAINING CREDIT</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>REMAINING CREDIT *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* REMAINING CREDIT *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>REMAINING MONEY</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* REMAINING MONEY</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>REMAINING MONEY *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* REMAINING MONEY *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>TELL * BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>TELL * BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>* TELL * BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>* TELL * BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>I WANT TO KNOW MY BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>I WANT TO KNOW MY BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>I WANT TO KNOW MY * BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>I WANT TO KNOW MY * BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>I WANT TO KNOW BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>I WANT TO KNOW * BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>WALLET BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>WALLET BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>MY WALLET BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* MY WALLET BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>MONEY AVAILABLE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* MONEY AVAILABLE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>MONEY AVAILABLE * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* MONEY AVAILABLE * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>AMOUNT AVAILABLE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* AMOUNT AVAILABLE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>AMOUNT AVAILABLE * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* AMOUNT AVAILABLE * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>MONEY IN MY WALLET</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* MONEY IN MY WALLET</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>MONEY IN MY WALLET * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* MONEY IN MY WALLET * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* MY WALLET BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>CREDIT LEFT</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* CREDIT LEFT</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>CREDIT LEFT * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* CREDIT LEFT * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>CREDIT IN MY WALLET</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* CREDIT IN MY WALLET</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>CREDIT IN MY WALLET * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+<category>
+<pattern>* CREDIT IN MY WALLET * </pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+
+</aiml>

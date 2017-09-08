@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+
+<category>
+<pattern>LOAD MONEY</pattern>
+<template>#add#<get name="name"/>#<set name="transid">0</set></template>
+</category>
+
+<category>
+<pattern>ADD MONEY</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSFER MONEY</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>PUT MONEY</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>LOAD VALUE</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>ADD VALUE</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSFER VALUE</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>PUT VALUE</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>LOAD CREDIT</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>ADD CREDIT</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSFER CREDIT</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>PUT CREDIT</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>LOAD AMOUNT</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>ADD AMOUNT</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSFER AMOUNT</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>PUT AMOUNT</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<!-- -->
+
+<category>
+<pattern>LOAD MONEY * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>ADD MONEY * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSFER MONEY * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>PUT MONEY * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>LOAD VALUE * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>ADD VALUE * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSFER VALUE * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>PUT VALUE * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>LOAD CREDIT * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>ADD CREDIT * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSFER CREDIT * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>PUT CREDIT * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>LOAD AMOUNT * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>ADD AMOUNT * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSFER AMOUNT * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+
+<category>
+<pattern>PUT AMOUNT * WALLET</pattern>
+<template><srai>LOAD MONEY</srai></template>
+</category>
+<!--send transaction id -->
+
+<category>
+<pattern>SEND TRANSACTIONID</pattern>
+<template>Please add money to Eko account if you have not added already, else fine. ### Now, give me your transaction id to charm you</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>* ME YOUR TRANSACTION ID *</that>
+<template>#add#<get name="name"/>#<set name="transid"><star/></set></template>
+</category>
+</aiml>

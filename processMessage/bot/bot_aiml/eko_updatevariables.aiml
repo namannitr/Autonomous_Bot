@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+<category>
+<pattern>SET AMOUNT * NUMBER * PIN * TRANSACTIONID *</pattern>
+<template><set name="amount"><star index='1'/></set><set name="recipient"><star index='2'/></set><set name="pin"><star index='3'/></set><set name="transid"><star index='4'/></set></template>
+</category>
+
+
+</aiml>

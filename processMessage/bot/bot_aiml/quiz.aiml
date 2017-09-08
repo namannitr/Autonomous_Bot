@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+
+<!--This is foreplay-->
+<category>
+<pattern>PLAY GAME</pattern>
+<template>Type Start to play</template>
+</category>
+
+<!--This is Start-->
+<category>
+<pattern>START</pattern>
+<that>TYPE START TO PLAY</that>
+<template>
+<think>
+<set name="res">0</set>
+</think>
+<srai>CONTINUE</srai>
+</template>
+</category>
+
+<category>
+<pattern>CONTINUE</pattern>
+<template>
+Your Current Score is:<get name="res" /> ###
+<random>
+<li>Ok!Hotshot...Answer me this in one word...India's 
+<random>
+<li><set name="topic">PM</set></li>
+<li><set name="topic">National Animal</set></li>
+<li><set name="topic">National Bird</set></li>
+<li><set name="topic">Capital</set></li>
+<li><set name="topic">Currency</set></li>
+</random>
+ is ???
+</li>
+<li> 
+<random>
+<li><set name="topic">Naman</set> -- </li>
+<li><set name="topic">Rohan</set> --</li>
+<li><set name="topic">Vyom</set> --</li>
+<li><set name="topic">Neeraj</set> --</li>
+<li><set name="topic">Anupam</set> --</li>
+</random>
+ Tell me his last name is ??? Answer me this in one word.
+</li>
+</random>
+</template>
+</category>
+
+<!--Check for correct response-->
+
+<category> 
+<pattern>*</pattern>
+<that>* ANSWER ME THIS IN ONE *</that>
+<template>
+<think>
+<set name="inp"><star/></set>
+</think>
+<condition name="topic">
+<li value="PM">
+ <condition name="inp">
+  <li value="MODI"><srai>INCRSCORE</srai></li>
+  <li value="Modi"><srai>INCRSCORE</srai></li>
+  <li value="QUIT"><srai>QUITGAME</srai></li>
+  <li value="Quit"><srai>QUITGAME</srai></li>
+  <li>Sorry MODI is correct.<srai>QUITGAME</srai></li>
+ </condition>
+</li>
+<li value="National Animal">
+ <condition name="inp">
+  <li value="TIGER"><srai>INCRSCORE</srai></li>
+  <li value="Tiger"><srai>INCRSCORE</srai></li>
+  <li value="QUIT"><srai>QUITGAME</srai></li>
+  <li value="Quit"><srai>QUITGAME</srai></li>
+  <li>Sorry TIGER is correct.<srai>QUITGAME</srai></li>
+ </condition>
+</li>
+<li value="National Bird">
+ <condition name="inp">
+  <li value="PEACOCK"><srai>INCRSCORE</srai></li>
+  <li value="Peacock"><srai>INCRSCORE</srai></li>
+  <li value="QUIT"><srai>QUITGAME</srai></li>
+  <li value="Quit"><srai>QUITGAME</srai></li>
+  <li>Sorry PEACOCK is correct.<srai>QUITGAME</srai></li>
+ </condition>
+</li>
+<li value="Capital">
+ <condition name="inp">
+  <li value="DELHI"><srai>INCRSCORE</srai></li>
+  <li value="Delhi"><srai>INCRSCORE</srai></li>
+  <li value="QUIT"><srai>QUITGAME</srai></li>
+  <li value="Quit"><srai>QUITGAME</srai></li>
+  <li>Sorry DELHI is correct.<srai>QUITGAME</srai></li>
+ </condition>
+</li>
+<li value="Currency">
+ <condition name="inp">
+  <li value="RUPEE"><srai>INCRSCORE</srai></li>
+  <li value="RUPEES"><srai>INCRSCORE</srai></li>
+  <li value="Rupees"><srai>INCRSCORE</srai></li>
+  <li value="Rupee"><srai>INCRSCORE</srai></li>
+  <li value="QUIT"><srai>QUITGAME</srai></li>
+  <li value="Quit"><srai>QUITGAME</srai></li>
+  <li>Sorry RUPEE is correct.<srai>QUITGAME</srai></li>
+ </condition>
+ </li>
+ <li value="Naman">
+ <condition name="inp">
+  <li value="AGARWAL"><srai>INCRSCORE</srai></li>
+  <li value="Agarwal"><srai>INCRSCORE</srai></li>
+  <li value="QUIT"><srai>QUITGAME</srai></li>
+  <li value="Quit"><srai>QUITGAME</srai></li>
+  <li>Sorry AGARWAL is correct.<srai>QUITGAME</srai></li>
+ </condition>
+ </li>
+ <li value="Vyom">
+ <condition name="inp">
+  <li value="RASTOGI"><srai>INCRSCORE</srai></li>
+  <li value="Rastogi"><srai>INCRSCORE</srai></li>
+  <li value="QUIT"><srai>QUITGAME</srai></li>
+  <li value="Quit"><srai>QUITGAME</srai></li>
+  <li>Sorry RASTOGI is correct.<srai>QUITGAME</srai></li>
+ </condition>
+ </li>
+ <li value="Rohan">
+ <condition name="inp">
+  <li value="BHOI"><srai>INCRSCORE</srai></li>
+  <li value="Bhoi"><srai>INCRSCORE</srai></li>
+  <li value="QUIT"><srai>QUITGAME</srai></li>
+  <li value="Quit"><srai>QUITGAME</srai></li>
+  <li>Sorry BHOI is correct.<srai>QUITGAME</srai></li>
+ </condition>
+ </li>
+ <li value="Neeraj">
+ <condition name="inp">
+  <li value="DHELARIYA"><srai>INCRSCORE</srai></li>
+  <li value="Dhelariya"><srai>INCRSCORE</srai></li>
+  <li value="QUIT"><srai>QUITGAME</srai></li>
+  <li value="Quit"><srai>QUITGAME</srai></li>
+  <li>Sorry DHELARIYA is correct.<srai>QUITGAME</srai></li>
+ </condition>
+ </li>
+ <li value="Anupam">
+ <condition name="inp">
+  <li value="VARGHESE"><srai>INCRSCORE</srai></li>
+  <li value="Varghese"><srai>INCRSCORE</srai></li>
+  <li value="QUIT"><srai>QUITGAME</srai></li>
+  <li value="Quit"><srai>QUITGAME</srai></li>
+  <li>Sorry VARGHESE is correct.<srai>QUITGAME</srai></li>
+  </condition>
+  </li>
+</condition>
+</template>
+</category>
+
+<!--Quit The Game-->
+<category>
+<pattern>QUITGAME</pattern>
+<template>
+Sorry!!!You have scored <get name="res"></get>/50.
+</template>
+</category>
+
+<!-- Score Updates here -->
+<category>
+<pattern>INCRSCORE</pattern>
+<template>
+<condition name="res">
+<li value="0"><think><set name="res">10</set></think><srai>CONTINUE</srai></li>
+<li value="10"><think><set name="res">20</set></think><srai>CONTINUE</srai></li>
+<li value="20"><think><set name="res">30</set></think><srai>CONTINUE</srai></li>
+<li value="30"><think><set name="res">40</set></think><srai>CONTINUE</srai></li>
+<li value="40"><srai>WONGAME</srai></li>
+</condition>
+</template>
+</category>
+
+<!--Win the match-->
+<category>
+<pattern>WONGAME</pattern>
+<template>
+Congrats!!!You have won the game with 50/50 score.
+</template>
+</category>
+
+</aiml>

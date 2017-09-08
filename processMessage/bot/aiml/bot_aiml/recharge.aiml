@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>RECHARGE</pattern>
+<template><srai>RECHARGE MY PHONE</srai></template>
+</category>
+<category>
+<pattern>RECH</pattern>
+<template><srai>RECHARGE MY PHONE</srai></template><template><srai>RECHARGE MY PHONE</srai></template>
+</category>
+<category>
+<pattern>RECHARGE MY PHONE</pattern>
+<template>#rech#<get name="username"/>#0# myphone</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ MYPHONE</that>
+<template>How much money do you want to recharge with</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>HOW MUCH MONEY DO YOU WANT TO RECHARGE WITH</that>
+<template>#rech#<get name="username"/>#<set name="amount"><star/></set># myphone</template>
+</category>
+
+<category>
+<pattern>RECHARGE MY PHONE WITH *</pattern>
+<template>#rech#<get name="username"/>#<set name="useramount"><star/></set># myphone</template>
+</category>
+<category>
+<pattern> * RECHARGE MY PHONE WITH *</pattern>
+<template>#rech#<get name="username"/>#<set name="useramount"><star index='2'/></set># myphone</template>
+</category>
+
+<category>
+<pattern>* RECHARGE MY PHONE</pattern>
+<template><srai>RECHARGE MY PHONE</srai></template>
+</category>
+<category>
+<pattern>RECHARGE MY NUMBER</pattern>
+<template><srai>RECHARGE MY PHONE</srai></template>
+</category>
+<category>
+<pattern>* RECHARGE MY NUMBER</pattern>
+<template><srai>RECHARGE MY PHONE</srai></template>
+</category>
+
+</aiml>

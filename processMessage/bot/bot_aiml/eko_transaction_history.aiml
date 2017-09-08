@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+<category>
+<pattern>TRANSACTION HISTORY</pattern>
+<template>#hist#<get name="name"/>#0#0#0</template>
+</category>
+
+<category>
+<pattern>MY HISTORY</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>MY HISTORY *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* MY HISTORY</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* MY HISTORY *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>ACCOUNT HISTORY</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>ACCOUNT HISTORY *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* ACCOUNT HISTORY</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* ACCOUNT HISTORY *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>WALLET HISTORY</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>WALLET HISTORY *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* WALLET HISTORY</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* WALLET HISTORY *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>PREVIOUS HISTORY</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>PREVIOUS HISTORY *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* PREVIOUS HISTORY</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* PREVIOUS HISTORY *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSACTION</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSACTION *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* TRANSACTION</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* TRANSACTION *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSACTIONS</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>TRANSACTIONS *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* TRANSACTIONS</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* TRANSACTIONS *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>MINI STATEMENT</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>MINI STATEMENT *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* MINI STATEMENT</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* MINI STATEMENT *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>WALLET STATEMENT</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>WALLET STATEMENT *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* WALLET STATEMENT</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* WALLET STATEMENT *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>ACCOUNT STATEMENT</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>ACCOUNT STATEMENT *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* ACCOUNT STATEMENT</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* ACCOUNT STATEMENT *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>DETAILED STATEMENT</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>DETAILED STATEMENT *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* DETAILED STATEMENT</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+<category>
+<pattern>* DETAILED STATEMENT *</pattern>
+<template><srai>TRANSACTION HISTORY</srai></template>
+</category>
+
+</aiml>

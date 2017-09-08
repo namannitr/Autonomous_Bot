@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>EKO HELP</pattern>
+<template>
+Not a user? Well it's never too late to register. Yes, you know what to type... Type in "register" and there you go. ###
+1)Out of balance? Recharge your phone. Type "recharge" and get started. ###
+2)Know your wallet balance by typing "balance" :) ###
+3)Send money to a friend rightaway. Type "send" to get started. ###
+4)Have a bad memory? You don't need almonds bro, just type in "transaction history" to get the details of your previous transactions. ###
+I frequently come up with games and offers for you to earn money :) 
+</template>
+</category>
+</aiml>

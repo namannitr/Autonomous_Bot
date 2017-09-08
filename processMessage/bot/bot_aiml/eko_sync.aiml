@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>SYNC MY ACCOUNT</pattern>
+<template>Syncing your account is very easy. Just go to the platform from where you have been using my services earlier and type "my eko id" there. Forward the response as it is over here and your accounts are synced smiley2 . </template>
+</category>
+
+<category>
+<pattern>SYNC</pattern>
+<template>Syncing your account is very easy. Just go to the platform from where you have been using my services earlier and type "my eko id" there. Forward the response as it is over here and your accounts are synced smiley2 . </template>
+</category>
+<category>
+<pattern>SYNCEDACCOUNT</pattern>
+<template>Your accounts are synced. You can now use my services from this platform. smiley1 </template>
+</category>
+
+</aiml>

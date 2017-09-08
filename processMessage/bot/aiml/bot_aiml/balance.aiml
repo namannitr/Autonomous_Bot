@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>BALANCE</pattern>
+<template>Your balance as on #1 is #2. <br/>
+Type "Help" to know more. </template>
+</category>
+<category>
+<pattern>BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>WHAT IS * BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>WHAT IS * BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>REMAINING BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>TELL ME * BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>TELL ME * BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>* TELL ME * BALANCE</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+<category>
+<pattern>* TELL ME * BALANCE *</pattern>
+<template><srai>BALANCE</srai></template>
+</category>
+</aiml>

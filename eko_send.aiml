@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+<!-- Full Send syntax received -->
+<!-- Edit -->
+<category>
+<pattern>SEND * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>SEND RUPEES * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT OF * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>SEND MONEY * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>SEND VALUE OF * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>SEND VALUE * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>SEND * BUCKS TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<!-- Full Send syntax received 
+       STAR before send -->
+<!-- Edit -->
+
+<category>
+<pattern>* SEND * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+<category>
+<pattern>* SEND RUPEES * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>* SEND AMOUNT OF * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>* SEND AMOUNT * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>* SEND MONEY * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>* SEND VALUE OF * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>* SEND VALUE * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<category>
+<pattern>* SEND BUCKS * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<!-- Only 'send' received -->
+<!-- Edit -->
+<category>
+<pattern>SEND</pattern>
+<template>#send#<get name="name"/>#<set name="amount">0</set>#<set name="recipient">0</set>#<set name="pin">0</set># send</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ SEND</that>
+<template>Hey <get name="name"/>. How much money exactly?</template>
+</category>
+
+<category>
+<pattern> *</pattern>
+<that>_ HOW MUCH MONEY _</that>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#<set name="recipient">0</set>#<set name="pin">0</set># send</template>
+</category>
+
+<category>
+<pattern>SEND NUMBER</pattern>
+<that>_ SEND</that>
+<template>Sure. Who do you want to send <get amount="amount"/> bucks to? Just attach/send their contact number.</template>
+</category>
+
+<category>
+<pattern>SEND NUMBER</pattern>
+<that>_ PINFORSEND</that>
+<template>Sure. Who do you want to send <get amount="amount"/> bucks to? Just attach/send their contact number.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ WHO DO YOU WANT TO SEND _</that>
+<template>#send#<get name="name"/>#<get name="amount"/>#<set name="recipient"><star/></set>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+<!-- Only 'Amount' received -->
+<!-- Edit -->
+<category>
+<pattern>SEND *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#<set name="recipient">0</set>#<set name="pin">0</set># send</template>
+</category>
+
+<category>
+<pattern>SEND RUPEES *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#<set name="recipient">0</set>#<set name="pin">0</set># send</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#<set name="recipient">0</set>#<set name="pin">0</set># send</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT OF *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#<set name="recipient">0</set>#<set name="pin">0</set># send</template>
+</category>
+
+<!-- Only 'Number' received -->
+<!-- Edit -->
+<category>
+<pattern>SEND TO *</pattern>
+<template>#send#<get name="name"/>#0#<set name="recipient"><star/></set>#<set name="pin">0</set># specialcaseforsend</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ SPECIALCASEFORSEND</that>
+<template>Sure. Please tell me the exact value in rupees.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ PLEASE TELL ME THE _</that>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#<get name="recipient"/>#<set name="pin">0</set># pinforsend</template>
+</category>
+
+
+<!-- Ask for PIN -->
+<!-- Edit -->
+<category>
+<pattern>SEND PIN</pattern>
+<that>_ PINFORSEND</that>
+<template>Got it, so I am sending <get name="amount"/> bucks to <get name="recipient"/> smiley4 .  Just tell me the pintwin to go ahead or type "Cancel" to stop.</template>
+</category>
+
+<category>
+<pattern>SEND PIN</pattern>
+<that>_ SEND</that>
+<template>Got it, so I am sending <get name="amount"/> bucks to <get name="recipient"/> smiley4 .  Just tell me the pintwin to go ahead or type "Cancel" to stop.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ TELL ME THE PINTWIN _</that>
+<template>#send#<get name="name"/>#<get name="amount"/>#<get name="recipient"/>#<set name="pin"><star/></set># invalidsendpin</template>
+</category>
+
+<category>
+<pattern>SEND PIN</pattern>
+<that>_ INVALIDSENDPIN</that>
+<template>Got it, so I am sending <get name="amount"/> bucks to <get name="recipient"/> smiley4 .  Just tell me the pintwin to go ahead or type "Cancel" to stop.</template>
+</category>
+
+
+</aiml>

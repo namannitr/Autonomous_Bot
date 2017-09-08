@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>SEND1</pattern>
+<template>response1</template>
+</category>
+<category>
+<pattern>SEND2</pattern>
+<that>RESPONSE1</that>
+<template>response2</template>
+</category>
+</aiml>

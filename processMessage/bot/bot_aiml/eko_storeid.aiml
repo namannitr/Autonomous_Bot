@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>STOREEKOID *</pattern>
+<template><set name="ekoid"><star/></set></template>
+</category>
+
+<category>
+<pattern>MY EKO ID</pattern>
+<template>ekoid <get name="ekoid"/></template>
+</category>
+
+
+<category>
+<pattern>EKOID *</pattern>
+<template>#sync <star/></template>
+</category>
+
+</aiml>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>MY NAME IS *</pattern>
+<template>Hello <set name = "name"><star/></set>.</template>
+</category>
+<category>
+<pattern>SET MASTER NAME</pattern>
+<template><set name = "botmaster">Naman Kumar Agarwal</set><set name = "master">Naman</set></template>
+</category>
+<category>
+<pattern>ABOUT YOU</pattern>
+<template>
+<random>
+<li>I am <get name="botname"/>, your digital wallet. I'm here to help you with financial tasks. Feel free to ask me for help anytime by just typing "Eko help"</li>
+<li>This is Eko, your banking companion. I can recharge your phone, send money to your friend and pay your bills. Just type "Eko help" for any assistance.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>EKO</pattern>
+<template>
+<srai>ABOUT YOU</srai>
+</template>
+</category>
+
+<category>
+<pattern>ABOUT EKO</pattern>
+<template>
+<srai>ABOUT YOU</srai>
+</template>
+</category>
+
+</aiml>

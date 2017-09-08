@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+<!-- Full Send syntax received -->
+<!-- Edit -->
+<category>
+<pattern>TRANSFER * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>TRANSFER RUPEES * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>TRANSFER AMOUNT OF * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>TRANSFER AMOUNT * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>TRANSFER MONEY * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>TRANSFER VALUE OF * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>TRANSFER VALUE * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>TRANSFER * BUCKS TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='1'/></set>#<set name="recipient"><star index='2'/></set>#0# pinforsend</template>
+</category>
+
+<!-- Full Send syntax received 
+       STAR before send -->
+<!-- Edit -->
+
+<category>
+<pattern>* TRANSFER * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#0# pinforsend</template>
+</category>
+<category>
+<pattern>* TRANSFER RUPEES * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>* TRANSFER AMOUNT OF * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>* TRANSFER AMOUNT * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>* TRANSFER MONEY * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>* TRANSFER VALUE OF * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>* TRANSFER VALUE * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#0# pinforsend</template>
+</category>
+
+<category>
+<pattern>* TRANSFER BUCKS * TO *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='3'/></set>#0# pinforsend</template>
+</category>
+
+<!-- Only 'send' received -->
+<!-- Edit -->
+<category>
+<pattern>TRANSFER</pattern>
+<template>#send#<get name="name"/>#0#0#0# send</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ TRANSFER</that>
+<template>How much money</template>
+</category>
+
+<category>
+<pattern> *</pattern>
+<that>HOW MUCH MONEY</that>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#0#0# send</template>
+</category>
+
+<category>
+<pattern>SEND NUMBER</pattern>
+<that>_ TRANSFER</that>
+<template>Enter the recipient for sending money</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>ENTER THE RECIPIENT FOR TRANSFERING MONEY</that>
+<template>#send#<get name="name"/>#<get name="amount"/>#<set name="recipient"><star/></set>#0# pinforsend</template>
+</category>
+
+<!-- Only 'Amount' received -->
+<!-- Edit -->
+<category>
+<pattern>TRANSFER *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#0#0# send</template>
+</category>
+
+<category>
+<pattern>TRANSFER RUPEES *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#0#0# send</template>
+</category>
+
+<category>
+<pattern>TRANSFER AMOUNT *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#0#0# send</template>
+</category>
+
+<category>
+<pattern>TRANSFER AMOUNT OF *</pattern>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#0#0# send# pinforsend</template>
+</category>
+
+<!-- Only 'Number' received -->
+<!-- Edit -->
+<category>
+<pattern>TRANSFER TO *</pattern>
+<template>#send#<get name="name"/>#0#<set name="recipient"><star/></set>#0# specialcaseforsend</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ SPECIALCASEFORTRANSFER</that>
+<template>How much money do you want to send</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>HOW MUCH MONEY DO YOU WANT TO TRANSFER</that>
+<template>#send#<get name="name"/>#<set name="amount"><star/></set>#<get name="recipient"/>#0# pinforsend</template>
+</category>
+
+
+<!-- Ask for PIN -->
+<!-- Edit -->
+<category>
+<pattern>SEND PIN</pattern>
+<that>_ PINFORTRANSFER</that>
+<template>I am going to send INR <get name="amount"/> to <get name="recipient"/>. Enter the pin to complete the send process</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ ENTER THE PIN TO COMPLETE THE TRANSFER PROCESS</that>
+<template>#send#<get name="name"/>#<get name="amount"/>#<get name="recipient"/>#<set name="pin"><star/></set></template>
+</category>
+
+</aiml>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>DEFAULTNAME</pattern>
+<template><think><set name ="botname">Eko</set></think></template>
+</category>
+<category>
+<pattern>WHAT IS YOUR NAME</pattern>
+<template>My name is <get name="botname"/> . What would you like to call me though?</template>
+</category>
+<category>
+<pattern>*</pattern>
+<that>_ LIKE TO CALL ME _</that>
+<template>That's cool. I'm <set name="botname"><star/></set> for you then. ;)</template>
+</category>
+<category>
+<pattern>YOUR NAME IS *</pattern>
+<template>That's cool. I'm <set name="botname"><star/></set> for you then. ;)</template>
+</category>
+<category>
+<pattern>I WILL CALL YOU *</pattern>
+<template>That's cool. I'm <set name="botname"><star/></set> for you then. ;)</template>
+</category>
+</aiml>

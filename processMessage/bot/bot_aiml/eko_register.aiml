@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>REGISTER NAME</pattern>
+<template>I'm really excited to get you started but I am gonna need your name first.</template>  
+</category>
+
+
+<category>
+<pattern>OPEN A WALLET</pattern>
+<template>#reg#<get name="name"/>#0#0#0</template>
+</category>
+<category>
+<pattern>OPEN WALLET</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>OPEN * WALLET</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>OPEN * WALLET *</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>* OPEN * WALLET</pattern>0
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>* OPEN * WALLET *</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>REGISTER</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>REG</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>REG ME</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>REGISTER MY NUMBER</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>REGISTER ME</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>REGISTER ME *</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>OPEN ACCOUNT</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>OPEN * ACCOUNT</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>OPEN * ACCOUNT *</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>* OPEN * ACCOUNT</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>* OPEN * ACCOUNT *</pattern>
+<template><srai>open a wallet</srai></template>
+</category>
+<category>
+<pattern>*</pattern>
+<that>* EXCITED TO GET YOU STARTED BUT *</that>
+<template>#reg#<set name="name"><star/></set>#0#0#0</template>
+</category>
+<category>
+<pattern>MY NAME IS *</pattern>
+<that>* EXCITED TO GET YOU STARTED BUT *</that>
+<template>#reg#<set name="name"><star/></set>#0#0#0</template>
+</category>
+<category>
+<pattern>I AM *</pattern>
+<that>* EXCITED TO GET YOU STARTED BUT *</that>
+<template>#reg#<set name="name"><star/></set>#0#0#0</template>
+</category>
+<category>
+<pattern>THIS IS *</pattern>
+<that>* EXCITED TO GET YOU STARTED BUT *</that>
+<template>#reg#<set name="name"><star/></set>#0#0#0</template>
+</category>
+
+</aiml>

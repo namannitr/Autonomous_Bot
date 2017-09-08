@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!--Play Game-->
+<category>
+<pattern>PLAY GAME</pattern>
+<template>Type Start to Play Quiz.</template>
+</category>
+
+<!--This is Start-->
+<category>
+<pattern>START</pattern>
+<that>TYPE START TO PLAY QUIZ</that>
+<template>
+<srai>TSELECT</srai>
+</template>
+</category>
+
+<!--Quiz Topic Select-->
+<category>
+<pattern>TSELECT</pattern>
+<template>Select Your Choice ###
+ 1.Country Capital###
+ 2.India###
+ 3.Movies###
+ 4.Sports###
+ 5.Cartoons###
+ <!--6.Birds###
+ 7.Animals###
+ 8.Eko###-->
+ Type Q/q to exit</template>
+</category>
+
+<!--For Topic Selection-->
+<category>
+<pattern>*</pattern>
+<that>SELECT YOUR CHOICE * TO EXIT</that>
+<template>
+<think>
+<set name="tsel"><star/></set>
+<set name="res">0</set>
+</think>
+<condition name="tsel">
+ <li value="1"><srai>CC</srai></li>
+ <li value="2"><srai>IND</srai></li>
+ <li value="3"><srai>MVI</srai></li>
+ <li value="4"><srai>SPO</srai></li>
+ <li value="5"><srai>CAR</srai></li>
+ <!--<li value="6"><srai>BIR</srai></li>
+ <li value="7"><srai>ANI</srai></li> 
+ <li value="8"><srai>EKO</srai></li>-->
+ <li>Invalid Option.Please Try Again.</li>
+</condition>
+</template>
+</category>
+
+<!--Country Capital-->
+<category>
+<pattern>CC</pattern>
+<template>
+ <random>
+  <li>What's the capital of UK?###
+   1.London###
+   2.Luxemborg###
+   3.Madrid###
+   4.Dublin###Select one option
+   <think><set name="topic">CCUK</set></think>
+  </li>
+  <li>What's the capital of USA?###
+   1.London###
+   2.Washington DC###
+   3.New York###
+   4.Berlin###Select one option
+   <think><set name="topic">CCUS</set></think>
+  </li>
+  <li>What's the capital of India?###
+   1.London###
+   2.New Delhi###
+   3.Mumbai###
+   4.Pune###Select one option
+   <think><set name="topic">CCIN</set></think>
+  </li>
+  <li>What's the capital of Russia?###
+   1.Moscow###
+   2.Luxe###
+   3.Madrid###
+   4.Mary###Select one option
+   <think><set name="topic">CCRU</set></think>
+  </li>
+  <li>What's the capital of Indonesia?###
+   1.India###
+   2.Java###
+   3.Jakarta###
+   4.Phnom Pneh###Select one option
+   <think><set name="topic">CCII</set></think>
+  </li>
+  <li>What's the capital of Portugal?###
+   1.Madrid###
+   2.Lisbon###
+   3.Lobe###
+   4.Dublin###Select one option
+   <think><set name="topic">CCPO</set></think>
+  </li>
+  <li>What's the capital of Peru?###
+   1.Gabon###
+   2.Luanda###
+   3.Malibu###
+   4.Lima###Select one option
+   <think><set name="topic">CCPU</set></think>
+  </li>
+  <li>What's the capital of Myanmar?###
+   1.Buki###
+   2.Burma###
+   3.Naypyidaw###
+   4.Garo###Select one option
+   <think><set name="topic">CCMY</set></think>
+  </li>
+  <li>What's the capital of Afghanistan?###
+   1.Kabul###
+   2.Karachi###
+   3.Sindh###
+   4.Jama###Select one option
+   <think><set name="topic">CCAF</set></think>
+  </li>
+  <li>What's the capital of Canada?###
+   1.Toronto###
+   2.Los Angeles###
+   3.Ottawa###
+   4.Osla###Select one option
+   <think><set name="topic">CCCA</set></think>
+  </li>
+ </random>
+</template>
+</category>
+
+<!--India Quiz-->
+<category>
+<pattern>IND</pattern>
+<template>
+ <random>
+  <li>What's the capital of India?###
+   1.Goa###
+   2.New Delhi###
+   3.Mumbai###
+   4.Pune### Select one option
+   <think><set name="topic">INCC</set></think>
+  </li>
+  <li>Who's the current PM of India?###
+   1.Rahul Gandhi###
+   2.Narendra Modi###
+   3.Pranav Mukherjee###
+   4.Naman Agarwal### Select one option
+   <think><set name="topic">INPM</set></think>
+  </li>
+  <li>Who's the captain of Indian Cricket Team?###
+   1.Virat Kohli###
+   2.Rahul Dravid###
+   3.Mahendra Singh Dhoni###
+   4.Yuvraj Singh### Select one option
+   <think><set name="topic">INCR</set></think>
+  </li>
+  <li>Who's the current Lok Shabha Speaker of India?###
+   1.Sumitra Mahajan###
+   2.Meira Kumar###
+   3.Hamid Ansari###
+   4.Sonia Gandhi### Select one option
+   <think><set name="topic">INLS</set></think>
+  </li>
+  <li>Gateway of India is at?###
+   1.TamilNadu###
+   2.Goa###
+   3.New Delhi###
+   4.Maharashtra### Select one option
+   <think><set name="topic">INGI</set></think>
+  </li>
+  <li>National Game of India is?###
+   1.Hockey###
+   2.Cricket###
+   3.Kabaddi###
+   4.Badminton### Select one option
+   <think><set name="topic">INNG</set></think>
+  </li>
+  <li>National Bird of India is?###
+   1.Crane###
+   2.Swan###
+   3.Peacock###
+   4.Hen### Select one option
+   <think><set name="topic">INNB</set></think>
+  </li>
+  <li>National Animal of India is?###
+   1.Cat###
+   2.Dog###
+   3.Lion###
+   4.Tiger### Select one option
+   <think><set name="topic">INNA</set></think>
+  </li>
+  <li>Number of states in India is?###
+   1.28###
+   2.29###
+   3.30###
+   4.27### Select one option
+   <think><set name="topic">INNS</set></think>
+  </li>
+  <li>Chief Minister of UT Delhi is?###
+   1.Arvind Kejriwal###
+   2.Sheila Dixit###
+   3.President's Rule###
+   4.Neeraj Dhelariya### Select one option
+   <think><set name="topic">INCM</set></think>
+  </li>
+ </random>
+</template>
+</category>
+
+<!--Movie Quiz-->
+<category>
+<pattern>MVI</pattern>
+<template>
+ <random>
+  <li>Who stars as The Joker in Batman-The Dark Knight?###
+   1.Heath Ledger###
+   2.Robin Williams###
+   3.Daniel Dafoe###
+   4.Jared Leto### Select one option
+   <think><set name="topic">MV1</set></think>
+  </li>
+  <li>Who gave music for The Pirates of Carribean series?###
+   1.Hans Zimmer###
+   2.Robin Djawadi###
+   3.Brad William###
+   4.Bryan Singer### Select one option
+   <think><set name="topic">MV2</set></think>
+  </li>
+  <li>How many times have Tom Hanks won the Oscar for 'The Best Actor'?###
+   1.1###
+   2.2###
+   3.0###
+   4.3### Select one option
+   <think><set name="topic">MV3</set></think>
+  </li>
+  <li>'Luke,I am your father!!!',said ----?###
+   1.Jedi###
+   2.Darthvader###
+   3.Han Solo###
+   4.James Kirk### Select one option
+   <think><set name="topic">MV4</set></think>
+  </li>
+  <li>What comes next,"Avengers!....?###
+   1.Let's Roll###
+   2.Unite###
+   3.Assemble###
+   4.Fight### Select one option
+   <think><set name="topic">MV5</set></think>
+  </li>
+  <li>'The boy who lived' is?###
+   1.Bruce Wayne###
+   2.Tom Riddle###
+   3.Harry Potter###
+   4.Clark### Select one option
+   <think><set name="topic">MV6</set></think>
+  </li>
+  <li>"What we do in life...echoes in eternity" said who?###
+   1.Zeus###
+   2.Perseus###
+   3.Spartacus###
+   4.Marcus### Select one option
+   <think><set name="topic">MV7</set></think>
+  </li>
+  <li>Gollum refers this as his precious###
+   1.Arkenstone###
+   2.Frodo Baggins###
+   3.Fish###
+   4.The Ring### Select one option
+   <think><set name="topic">MV8</set></think>
+  </li>
+  <li>Your friendly neighbourhood is?###
+   1.Spiderman###
+   2.Antman###
+   3.Batman###
+   4.Superman### Select one option
+   <think><set name="topic">MV9</set></think>
+  </li>
+  <li>The Theory of Everything movie focuses on life and works of?###
+   1.Stephen Hawking###
+   2.Richard Wallace###
+   3.Albert Einstein###
+   4.Stephen King### Select one option
+   <think><set name="topic">MV10</set></think>
+  </li>
+ </random>
+</template>
+</category>
+
+<!--Sports Quiz-->
+<category>
+<pattern>SPO</pattern>
+<template>
+ <random>
+  <li> In feet, how high above the floor is the hoop on a basketball court?###
+   1.10###
+   2.9###
+   3.12###
+   4.8### Select one option
+   <think><set name="topic">SP1</set></think>
+  </li>
+  <li>How many balls are there on the table at the start of a game of 8-ball pool?###
+   1.16###
+   2.8###
+   3.9###
+   4.10### Select one option
+   <think><set name="topic">SP2</set></think>
+  </li>
+  <li>Which heavyweight boxer was nicknamed "The Real Deal"?###
+   1.Mike Tyson###
+   2.Evander Holyfield###
+   3.Muhammad Ali###
+   4.Floyd Mayweather### Select one option
+   <think><set name="topic">SP3</set></think>
+  </li>
+  <li>What is the name of the Test cricket ground in Birmingham?###
+   1.Birmingham###
+   2.Edgbaston###
+   3.Eagle###
+   4.Winterton### Select one option
+   <think><set name="topic">SP4</set></think>
+  </li>
+  <li>What football player was known as 'the black pearl'?###
+   1.Zidane###
+   2.Pele###
+   3.Eusebio###
+   4.Ali### Select one option
+   <think><set name="topic">SP5</set></think>
+  </li>
+  <li>What identifies the leader in the Tour de France?###
+   1.Check###
+   2.Red###
+   3.Apron###
+   4.Blue### Select one option
+   <think><set name="topic">SP6</set></think>
+  </li>
+  <li>American teams have recorded most wins in the Davis Cup, which country comes second?###
+   1.Canada###
+   2.England###
+   3.India###
+   4.Australia### Select one option
+   <think><set name="topic">SP7</set></think>
+  </li>
+  <li>Highest number of gold-medals in Olympics is won by###
+   1.Ben Knight###
+   2.Arthur Mark###
+   3.Michael Philips###
+   4.Michael Phelps### Select one option
+   <think><set name="topic">SP8</set></think>
+  </li>
+  <li>Which Grand Prix team's world champions have included Emerson Fittipaldi, Niki Lauda and Alain Prost?###
+   1.McClaren###
+   2.Ferrari###
+   3.Mercedes###
+   4.Marlboro### Select one option
+   <think><set name="topic">SP9</set></think>
+  </li>
+  <li>For which country does Sachin Tendulkar play cricket?###
+   1.India###
+   2.Pakistan###
+   3.Srilanka###
+   4.South Africa### Select one option
+   <think><set name="topic">SP10</set></think>
+  </li>
+ </random>
+</template>
+</category>
+
+<!--Cartoon Quiz-->
+<category>
+<pattern>CAR</pattern>
+<template>
+ <random>
+  <li>Tin Tin's dog name is?###
+   1.Snowy###
+   2.Snow###
+   3.Snowdog###
+   4.Snowboy### Select one option
+   <think><set name="topic">CA1</set></think>
+  </li>
+  <li>"What's up Doc?",which famous cartoon said this?###
+   1.Bugs Bunny###
+   2.Sylvister###
+   3.Tweety###
+   4.Tom### Select one option
+   <think><set name="topic">CA2</set></think>
+  </li>
+  <li>Brainiac is nemesis of?###
+   1.Batman###
+   2.Superman###
+   3.Flash###
+   4.Ironman### Select one option
+   <think><set name="topic">CA3</set></think>
+  </li>
+  <li>Harvey Dent is also?###
+   1.Joker###
+   2.Two Face###
+   3.Batman###
+   4.Bane### Select one option
+   <think><set name="topic">CA4</set></think>
+  </li>
+  <li>Superman's weakness is to?###
+   1.Sun###
+   2.Zetamite###
+   3.Kryptonite###
+   4.Darkness### Select one option
+   <think><set name="topic">CA5</set></think>
+  </li>
+  <li>Which evil character in Powerpuff Girls was once The Professor's pet?###
+   1.Jerry###
+   2.Tom###
+   3.Mojo Jojo###
+   4.Mojo Rojo### Select one option
+   <think><set name="topic">CA6</set></think>
+  </li>
+  <li>Prince Adam is secret identity of?###
+   1.Thunder King###
+   2.Dante###
+   3.Skeletor###
+   4.He Man### Select one option
+   <think><set name="topic">CA7</set></think>
+  </li>
+  <li>'The Beast' is mutant name of?###
+   1.Slade###
+   2.Logan###
+   3.Hank Pilmer###
+   4.Hank McKoy### Select one option
+   <think><set name="topic">CA8</set></think>
+  </li>
+  <li>Reed Richard named himself as?###
+   1.Mr. Fantastic###
+   2.Human Torch###
+   3.The Thing###
+   4.Silver Surfer### Select one option
+   <think><set name="topic">CA9</set></think>
+  </li>
+  <li>Simba's baboon name is?###
+   1.Rafiki###
+   2.Sifiki###
+   3.Rikimaru###
+   4.Raichi### Select one option
+   <think><set name="topic">CA10</set></think>
+  </li>
+ </random>
+</template>
+</category>
+
+<!--Check for Answers-->
+<category>
+<pattern>*</pattern>
+<that>* SELECT ONE OPTION</that>
+<template>
+<think><set name="ans"><star /></set></think>
+ <condition name="tsel">
+  <li value="1">
+   <condition name="topic">
+    <li value="CCUK">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE1</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CCUS">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE1</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CCIN">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE1</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CCRU">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE1</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CCII">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE1</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CCPO">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE1</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CCPU">
+     <condition name="ans">
+      <li value="4">Correct!!!<srai>INCRSCORE1</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CCMY">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE1</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CCAF">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE1</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CCCA">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE1</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+   </condition>
+  </li>
+  <li value="2">
+   <condition name="topic">
+    <li value="INCC">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE2</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="INPM">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE2</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="INCR">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE2</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="INLS">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE2</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="INGI">
+     <condition name="ans">
+      <li value="4">Correct!!!<srai>INCRSCORE2</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="INNG">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE2</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="INNB">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE2</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="INNA">
+     <condition name="ans">
+      <li value="4">Correct!!!<srai>INCRSCORE2</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="INNS">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE2</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="INCM">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE2</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+   </condition>
+  </li>
+  <li value="3">
+   <condition name="topic">
+    <li value="MV1">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE3</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="MV2">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE3</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="MV3">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE3</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="MV4">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE3</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="MV5">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE3</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="MV6">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE3</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="MV7">
+     <condition name="ans">
+      <li value="4">Correct!!!<srai>INCRSCORE3</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="MV8">
+     <condition name="ans">
+      <li value="4">Correct!!!<srai>INCRSCORE3</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="MV9">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE3</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="MV10">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE3</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+   </condition>
+  </li>
+  <li value="4">
+   <condition name="topic">
+    <li value="SP1">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE4</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="SP2">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE4</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="SP3">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE4</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="SP4">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE4</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="SP5">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE4</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="SP6">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE4</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="SP7">
+     <condition name="ans">
+      <li value="4">Correct!!!<srai>INCRSCORE4</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="SP8">
+     <condition name="ans">
+      <li value="4">Correct!!!<srai>INCRSCORE4</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="SP9">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE4</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="SP10">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE4</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+   </condition>
+  </li>
+  <li value="5">
+   <condition name="topic">
+    <li value="CA1">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE5</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CA2">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE5</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CA3">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE5</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CA4">
+     <condition name="ans">
+      <li value="2">Correct!!!<srai>INCRSCORE5</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CA5">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE5</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CA6">
+     <condition name="ans">
+      <li value="3">Correct!!!<srai>INCRSCORE5</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CA7">
+     <condition name="ans">
+      <li value="4">Correct!!!<srai>INCRSCORE5</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CA8">
+     <condition name="ans">
+      <li value="4">Correct!!!<srai>INCRSCORE5</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CA9">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE5</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+    <li value="CA10">
+     <condition name="ans">
+      <li value="1">Correct!!!<srai>INCRSCORE5</srai></li>
+      <li value="Q">Quiting!<srai>QUITGAME</srai></li>
+      <li value="q">Quiting!<srai>QUITGAME</srai></li>
+      <li><srai>QUITGAME</srai></li>
+     </condition>
+    </li>
+   </condition>
+  </li>
+ </condition>
+</template>
+</category>
+
+<!--Update Country Capital Score-->
+<category>
+<pattern>INCRSCORE1</pattern>
+<template>
+<condition name="res">
+ <li value="0"><think><set name="res">10</set></think>###<srai>CC</srai></li>
+ <li value="10"><think><set name="res">20</set></think>###<srai>CC</srai></li>
+ <li value="20"><think><set name="res">30</set></think>###<srai>CC</srai></li>
+ <li value="30"><think><set name="res">40</set></think>###<srai>CC</srai></li>
+ <li value="40"><think><set name="res">50</set></think>###<srai>WONGAME</srai></li>
+</condition>
+</template>
+</category>
+
+<!--Update India Score-->
+<category>
+<pattern>INCRSCORE2</pattern>
+<template>
+<condition name="res">
+ <li value="0"><think><set name="res">10</set></think>###<srai>IND</srai></li>
+ <li value="10"><think><set name="res">20</set></think>###<srai>IND</srai></li>
+ <li value="20"><think><set name="res">30</set></think>###<srai>IND</srai></li>
+ <li value="30"><think><set name="res">40</set></think>###<srai>IND</srai></li>
+ <li value="40"><think><set name="res">50</set></think>###<srai>WONGAME</srai></li>
+</condition>
+</template>
+</category>
+
+<!--Update Movie Score-->
+<category>
+<pattern>INCRSCORE3</pattern>
+<template>
+<condition name="res">
+ <li value="0"><think><set name="res">10</set></think>###<srai>MVI</srai></li>
+ <li value="10"><think><set name="res">20</set></think>###<srai>MVI</srai></li>
+ <li value="20"><think><set name="res">30</set></think>###<srai>MVI</srai></li>
+ <li value="30"><think><set name="res">40</set></think>###<srai>MVI</srai></li>
+ <li value="40"><think><set name="res">50</set></think>###<srai>WONGAME</srai></li>
+</condition>
+</template>
+</category>
+
+<!--Update Sports Score-->
+<category>
+<pattern>INCRSCORE4</pattern>
+<template>
+<condition name="res">
+ <li value="0"><think><set name="res">10</set></think>###<srai>SPO</srai></li>
+ <li value="10"><think><set name="res">20</set></think>###<srai>SPO</srai></li>
+ <li value="20"><think><set name="res">30</set></think>###<srai>SPO</srai></li>
+ <li value="30"><think><set name="res">40</set></think>###<srai>SPO</srai></li>
+ <li value="40"><think><set name="res">50</set></think>###<srai>WONGAME</srai></li>
+</condition>
+</template>
+</category>
+
+<!--Update Cartoon Score-->
+<category>
+<pattern>INCRSCORE5</pattern>
+<template>
+<condition name="res">
+ <li value="0"><think><set name="res">10</set></think>###<srai>CAR</srai></li>
+ <li value="10"><think><set name="res">20</set></think>###<srai>CAR</srai></li>
+ <li value="20"><think><set name="res">30</set></think>###<srai>CAR</srai></li>
+ <li value="30"><think><set name="res">40</set></think>###<srai>CAR</srai></li>
+ <li value="40"><think><set name="res">50</set></think>###<srai>WONGAME</srai></li>
+</condition>
+</template>
+</category>
+
+<!--Won Game-->
+<category>
+<pattern>WONGAME</pattern>
+<template>
+Congratulations User!!!###You have won the PopQuiz with <get name="res" />/50 score.
+</template>
+</category>
+
+<!--Quit Game-->
+<category>
+<pattern>QUITGAME</pattern>
+<template>
+Sorry User!!!###Your score is <get name="res" />/50 .
+</template>
+</category>
+
+</aiml>

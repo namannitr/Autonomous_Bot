@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<!-- processing pending send request. -->
+<category>
+<pattern>PENDINGSENDREQUEST</pattern>
+<template>Would you like to complete this send request? (Yes/No)</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>* LIKE TO COMPLETE THIS SEND *</that>
+<template>#send#<get name="name"/>#<get name="amount"/>#<get name="recipient"/>#<get name="pin"/># send</template>
+</category>
+
+<category>
+<pattern>NO</pattern>
+<that>* LIKE TO COMPLETE THIS SEND * </that>
+<template>#cancel</template>
+</category>
+
+<!-- processing pending recharge request. -->
+<category>
+<pattern>PENDINGRECHREQUEST</pattern>
+<template>Would you like to complete this recharge request? (Yes/No)</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>* LIKE TO COMPLETE THIS RECHARGE *</that>
+<template>#rech#<get name="name"/>#<get name="amount"/>#<get name="recipient"/>#<get name="pin"/># rechargepending</template>
+</category>
+
+<category>
+<pattern>NO</pattern>
+<that>* LIKE TO COMPLETE THIS RECHARGE *</that>
+<template>#cancel</template>
+</category>
+
+<!-- processing pending register request. -->
+<category>
+<pattern>PENDINGREGREQUEST</pattern>
+<template>Would you like to complete this register request? (Yes/No)</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>* LIKE TO COMPLETE THIS REGISTER *</that>
+<template>#reg#<get name="name"/>#<get name="amount"/>#<get name="recipient"/>#<get name="pin"/># register</template>
+</category>
+
+<category>
+<pattern>NO</pattern>
+<that>* LIKE TO COMPLETE THIS REGISTER *</that>
+<template>#cancel</template>
+</category>
+
+<!-- processing pending add_money request. -->
+<category>
+<pattern>PENDINGADDREQUEST</pattern>
+<template>You wanted to add money to your wallet. Do you still want to add money to your wallet? (Yes/No)</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>* STILL WANT TO ADD *</that>
+<template>#add#<get name="name"/>#<get name="transid"/># add</template>
+</category>
+
+<category>
+<pattern>NO</pattern>
+<that>* STILL WANT TO ADD *</that>
+<template>#cancel</template>
+</category>
+
+</aiml>

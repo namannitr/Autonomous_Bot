@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>HI</pattern>
+<template>Hello <get name= "name"/>.</template>
+</category>
+<category>
+<pattern>HELLO</pattern>
+<template><srai>HI</srai></template>
+</category>
+<category>
+<pattern>HI THERE</pattern>
+<template><srai>HI</srai></template>
+</category>
+<category>
+<pattern>HELLO THERE</pattern>
+<template><srai>HI</srai></template>
+</category>
+<category>
+<pattern>HI EKO</pattern>
+<template><srai>HI</srai></template>
+</category>
+<category>
+<pattern>HELLO EKO</pattern>
+<template><srai>HI</srai></template>
+</category>
+<category>
+<pattern>BYE</pattern>
+<template>Bye <get name="name"/>.</template>
+</category>
+</aiml>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+<!-- RECHARGING OWN NuMBER-->
+<!-- Edit -->
+
+
+<!-- Recharging own number #### FULL SYNTAX -->
+<!-- Edit -->
+<category>
+<pattern>RECHARGE MY PHONE WITH *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star/></set># myphone#<set name="pin">0</set># pinforrechargeself</template>
+</category>
+
+<category>
+<pattern> * RECHARGE MY PHONE WITH *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='2'/></set># myphone#<set name="pin">0</set># pinforrechargeself</template>
+</category>
+
+
+<!-- Recharging own number #### AMOUNT IS MISSING-->
+<!-- Edit -->
+
+<category>
+<pattern>RECHARGE MY PHONE</pattern>
+<template>#rech#<get name="name"/>#<set name="amount">0</set># myphone#<set name="pin">0</set># rechargeamtmissing</template>
+</category>
+
+
+<category>
+<pattern>* RECHARGE MY PHONE</pattern>
+<template><srai>RECHARGE MY PHONE</srai></template>
+</category>
+
+
+<category>
+<pattern>RECHARGE MY NUMBER</pattern>
+<template><srai>RECHARGE MY PHONE</srai></template>
+</category>
+
+<category>
+<pattern>* RECHARGE MY NUMBER</pattern>
+<template><srai>RECHARGE MY PHONE</srai></template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ RECHARGEAMTMISSING</that>
+<template>Hey <get name="name"/>. Would you please specify the recharge amount too. smiley4</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ PINFORRECHARGESELF</that>
+<template>Hey <get name="name"/>. Would you please specify the recharge amount too. smiley4</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ SPECIFY THE RECHARGE _</that>
+<template>#rech#<get name="name"/>#<set name="amount"><star/></set># myphone#<set name="pin">0</set># pinforrechargeself</template>
+</category>
+
+<!-- OWN NUMBER Ask for PIN-->
+<!-- Edit -->
+<category>
+<pattern>SEND PIN</pattern>
+<that>_ PINFORRECHARGESELF</that>
+<template>Sure <get name="name"/>. I am going to recharge your phone with INR <get name="amount"/>. smiley2 Just let me know the pintwin to go ahead or simply type "Cancel" to stop.</template>
+</category>
+
+<category>
+<pattern>SEND PIN</pattern>
+<that>_ INVALIDPINRECHSELF</that>
+<template>Sure <get name="name"/>. I am going to recharge your phone with INR <get name="amount"/>. smiley2 Just let me know the pintwin to go ahead or simply type "Cancel" to stop.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ JUST LET ME KNOW THE PINTWIN _</that>
+<template>#rech#<get name="name"/>#<get name="amount"/># myphone#<set name="pin"><star/></set># invalidpinrechself</template>
+</category>
+
+<!-- RECHARGING OTHER NUMBER -->
+<!-- Edit -->
+
+
+<!-- Recharging other number #### FULL SYNTAX -->
+<!-- Edit -->
+
+<category>
+<pattern>RECHARGE * WITH *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='1'/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<category>
+<pattern>RECHARGE RUPEES * TO *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='1'/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<category>
+<pattern>RECHARGE * WITH AMOUNT OF *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='1'/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<category>
+<pattern>RECHARGE * WITH AMOUNT *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='1'/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<category>
+<pattern>RECHARGE * WITH MONEY *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='2'/></set>#<set name="recipient"><star index='1'/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<category>
+<pattern>* RECHARGE * WITH *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='3'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+<category>
+<pattern>* RECHARGE * WITH RUPEES *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='3'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<category>
+<pattern>* RECHARGE * WITH AMOUNT OF *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='3'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<category>
+<pattern>* RECHARGE * WITH AMOUNT *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='3'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<category>
+<pattern>* RECHARGE * WITH MONEY *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount"><star index='3'/></set>#<set name="recipient"><star index='2'/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<!-- Recharging other number ##### Only 'RECHARGE' received -->
+<!-- Edit -->
+<category>
+<pattern>RECHARGE</pattern>
+<template>#rech#<get name="name"/>#<set name="amount">0</set>#<set name="recipient">0</set>#<set name="pin">0</set># rechargeotheramtmissing</template>
+</category>
+
+<category>
+<pattern>RECH</pattern>
+<template><srai>RECHARGE</srai></template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ RECHARGEOTHERAMTMISSING</that>
+<template>Hey <get name="name"/>. With what amount should I recharge? smiley4</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ RECHARGENUMBERMISSING</that>
+<template>Hey <get name="name"/>. With what amount should I recharge? smiley4</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ RECHARGEPENDING</that>
+<template>Hey <get name="name"/>. Would you please specify the recharge amount too.</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>_ WHAT AMOUNT SHOULD I _</that>
+<template>#rech#<get name="name"/>#<set name="amount"><star/></set>#<set name="recipient">0</set>#<set name="pin">0</set># rechargenumbermissing</template>
+</category>
+
+<category>
+<pattern>SEND NUMBER</pattern>
+<that>_ RECHARGENUMBERMISSING</that>
+<template>Ok...and what phone number should I recharge? Just tell me their phone number/vcard . smiley6</template>
+</category>
+
+<category>
+<pattern>SEND NUMBER</pattern>
+<that>_ PINFORRECHARGE</that>
+<template>Ok...and what phone number should I recharge? Just tell me their phone number/vcard . smiley6</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ WHAT PHONE NUMBER SHOULD _</that>
+<template>#rech#<get name="name"/>#<get name="amount"/>#<set name="recipient"><star/></set>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<!-- Recharging other number ##### Only 'Number' received -->
+<!-- Edit -->
+<category>
+<pattern>RECHARGE *</pattern>
+<template>#rech#<get name="name"/>#<set name="amount">0</set>#<set name="recipient"><star/></set>#<set name="pin">0</set># specialcaseforrecharge</template>
+</category>
+
+<category>
+<pattern>SEND AMOUNT</pattern>
+<that>_ SPECIALCASEFORRECHARGE</that>
+<template>With what recharge amount exactly?</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>WITH WHAT RECHARGE AMOUNT _</that>
+<template>#rech#<get name="name"/>#<set name="amount"><star/></set>#<get name="recipient"/>#<set name="pin">0</set># pinforrecharge</template>
+</category>
+
+<!-- Ask for PIN -->
+<!-- Edit -->
+<category>
+<pattern>SEND PIN</pattern>
+<that>_ PINFORRECHARGE</that>
+<template>Sure <get name="name"/>. So, I am going to recharge <get name="recipient"/> with INR <get name="amount"/>. smiley2 Just enter the pintwin to complete the recharge process or type "Cancel" to cancel.</template>
+</category>
+
+<category>
+<pattern>SEND PIN</pattern>
+<that>_ RECHARGEPENDING</that>
+<template>Sure <get name="name"/>. So, I am going to recharge <get name="recipient"/> with INR <get name="amount"/>. smiley2 Just enter the pintwin to complete the recharge process or type "Cancel" to cancel.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ THE PINTWIN TO COMPLETE THE RECHARGE _</that>
+<template>#rech#<get name="name"/>#<get name="amount"/>#<get name="recipient"/>#<set name="pin"><star/></set># invalidrechpin</template>
+</category>
+
+<category>
+<pattern>SEND PIN</pattern>
+<that>_ INVALIDRECHPIN</that>
+<template>Sure <get name="name"/>. So, I am going to recharge <get name="recipient"/> with INR <get name="amount"/>. smiley2 Just enter the pintwin to complete the recharge process or type "Cancel" to cancel.</template>
+</category>
+
+</aiml>

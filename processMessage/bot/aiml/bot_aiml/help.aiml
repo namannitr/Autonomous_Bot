@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+<pattern>HELP</pattern>
+<template>
+Banking has never been so easy. <br/>
+Out of balance? Recharge your phone. Type "recharge" to know how. <br/>
+Know your wallet balance by typing "balance" :) <br/>
+Send money to a friend rightaway. Type "send" to know how.<br/>
+For more options type "more". 
+</template>
+</category>
+<category>
+<pattern>MORE</pattern>
+<template>
+Have a bad memory? You don't need almonds bro, just type in "transaction history" to get the details of your previous transactions. <br/>
+Not a user? Well it's never too late to register. Yes, you know what to type......you guessed it right! Type in "register" and there you go. <br/>
+</template>
+</category>
+</aiml>
