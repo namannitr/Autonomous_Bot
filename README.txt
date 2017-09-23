@@ -1,4 +1,5 @@
 Conversational Banking Prototype
+developing...
 
 
 packages needed MySQLdb, phpmyadmin, Pyaiml, yowsup, sleekxmpp, speech recognition master
