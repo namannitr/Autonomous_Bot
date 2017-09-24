@@ -191,6 +191,8 @@ class Brain(object):
 		#else:
 		#	l = self.groupCustomerForWhatsapp(dbUpdateObject,sessionObject,item);
 		#	botResponse = l[0]
+		print "IIIIIIIIIIIIIIIIII";
+		print botResponse;
 		tts = gTTS(text=botResponse, lang='en', slow=False);
 		fname='./../../../../public/recent.mp3';
 		if os.path.isfile(fname):
