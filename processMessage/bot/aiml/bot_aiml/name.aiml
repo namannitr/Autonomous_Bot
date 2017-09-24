@@ -4,14 +4,14 @@
 <pattern>I AM *</pattern>
 <template>
  Hello <set name="username"><star/></set>
-</template>  
+</template>
 </category>
 <category>
 <pattern>MY NAME IS *</pattern>
 <template>
  Hello <set name="username"> <star/> </set>
-</template>  
-</category> 
+</template>
+</category>
 <category>
 <pattern>THIS IS *</pattern>
 <template>Hello <set name="username"> <star/> </set> </template>

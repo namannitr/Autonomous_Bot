@@ -3,7 +3,7 @@
 <category>
 <pattern>REGISTER NAME</pattern>
 <template>
-Tell me your name for registration</template>  
+Tell me your name for registration</template>
 </category>
 <category>
 <pattern>OPEN A WALLET</pattern>

@@ -2,7 +2,7 @@
 <aiml version="1.0">
 <category>
 <pattern>HI</pattern>
-<template>Hello <get name= "name"/>.</template>
+<template>Hello <get name= "username"/>.</template>
 </category>
 <category>
 <pattern>HELLO</pattern>
@@ -26,6 +26,6 @@
 </category>
 <category>
 <pattern>BYE</pattern>
-<template>Bye <get name="name"/>.</template>
+<template>Bye <get name="username"/>.</template>
 </category>
 </aiml>

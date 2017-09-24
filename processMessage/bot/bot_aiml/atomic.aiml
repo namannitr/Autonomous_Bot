@@ -47,7 +47,7 @@
 <template>Not many people use that.</template>
 </category>
 <category><pattern>IMPRESSIVE</pattern>
-<template>I am happy that you're impressed, <get name="name"/>.</template>
+<template>I am happy that you're impressed, <get name="username"/>.</template>
 </category>
 <category><pattern>WELCOME</pattern>
 <template>Hello there <get name="name"/></template>
