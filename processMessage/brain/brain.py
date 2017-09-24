@@ -195,5 +195,5 @@ class Brain(object):
 		fname='./../../../../public/recent.mp3';
 		if os.path.isfile(fname):
 			os.remove(fname);
-		#tts.save(fname);
+		tts.save(fname);
 		dumpObject.dump(dbUpdateObject,botResponse,item);
