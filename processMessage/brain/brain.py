@@ -191,6 +191,9 @@ class Brain(object):
 		#else:
 		#	l = self.groupCustomerForWhatsapp(dbUpdateObject,sessionObject,item);
 		#	botResponse = l[0]
-		tts = gTTS(text=botResponse, lang='en', slow=True);
-		tts.save('./../../test.mp3');
+		tts = gTTS(text=botResponse, lang='en', slow=False);
+		fname='./../../../../public/recent.mp3';
+		if os.path.isfile(fname):
+			os.remove(fname);
+		tts.save(fname);
 		dumpObject.dump(dbUpdateObject,botResponse,item);
