@@ -126,11 +126,13 @@ class Brain(object):
 
 
 	def existingCustomer(self,dbUpdateObject,sessionObject,item):
+		print "Naman 1";
 		smiliSubObject=SmiliSub();
+		print "Naman 2";
 		sessionObject.write_session(item)
-		print item;
+		print "Naman 3";
 		botResponse=sessionObject.respond(item[2],item[1])
-		print botResponse
+		print "Naman 4";
 
 
 		if botResponse =='' or botResponse==None:
