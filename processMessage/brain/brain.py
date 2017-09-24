@@ -11,6 +11,15 @@ from ekofunction.apicall import addmoney
 
 class Brain(object):
 
+	def tracefunc(frame, event, arg, indent=[0]):
+		if event == "call":
+			indent[0] += 2
+			print "-" * indent[0] + "> call function", frame.f_code.co_name
+		elif event == "return":
+			print "<" + "-" * indent[0], "exit function", frame.f_code.co_name
+			indent[0] -= 2
+		return tracefunc
+
 
 	#checking if there is a pending request of the user from the process_request table
 	def pendingRequest(self,dbUpdateObject,item):
@@ -178,6 +187,7 @@ class Brain(object):
 	#main  function
 	def brain1(self,dbUpdateObject,sessionObject,item, dumpObject):
 		#dumpObject=Dump();
+		sys.settrace(tracefunc);
 		customerType=item[1][:3]
 		print customerType
 		if customerType=="TEM":
