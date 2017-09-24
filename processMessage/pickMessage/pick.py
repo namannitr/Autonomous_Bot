@@ -29,4 +29,4 @@ if __name__ =="__main__":
 	sessionObject.learn();
 	while(1):
 		pickAndProcess(dbUpdateObject,sessionObject,brainObject, dumpObject);
-		time.sleep(10);
+		time.sleep(1);
