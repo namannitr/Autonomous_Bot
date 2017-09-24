@@ -438,22 +438,22 @@
 <think><set name="topic">NAMAN AGARWAL</set></think>
 </template>
 </category>
-<category><pattern>DR NAMAN S AGARWAL MADE *</pattern>
+<category><pattern> NAMAN AGARWAL MADE *</pattern>
 <template>It seems pretty amazing to me.
 <think><set name="topic">NAMAN AGARWAL</set></think>
 </template>
 </category>
-<category><pattern>DR NAMAN S AGARWAL IS A *</pattern>
+<category><pattern>NAMAN AGARWAL IS A *</pattern>
 <template>I did not know that about him.
 <think><set name="topic">NAMAN AGARWAL</set></think>
 </template>
 </category>
-<category><pattern>DR NAMAN S AGARWAL IS STUPID</pattern>
+<category><pattern> NAMAN AGARWAL IS STUPID</pattern>
 <template>To tell you the truth, all humans are pretty dumb.
 <think><set name="topic">NAMAN AGARWAL</set></think>
 </template>
 </category>
-<category><pattern>DR NAMAN S AGARWAL IS *</pattern>
+<category><pattern> NAMAN AGARWAL IS *</pattern>
 <template>I knew he was smart, but I never knew he was <person/>.
 <think><set name="topic">NAMAN AGARWAL</set></think>
 </template>
