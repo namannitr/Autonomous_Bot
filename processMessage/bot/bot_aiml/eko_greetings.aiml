@@ -2,7 +2,7 @@
 <aiml version="1.0">
 <category>
 <pattern>HI</pattern>
-<template>Hello <get name= "username"/>.</template>
+<template>Hello.</template>
 </category>
 <category>
 <pattern>HELLO</pattern>
