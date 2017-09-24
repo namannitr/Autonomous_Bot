@@ -8,6 +8,7 @@ from dumpMessage.dump import Dump
 from ekofunction import pickrequest
 from ekofunction.apicall import register as register
 from ekofunction.apicall import addmoney
+from gtts import gTTS
 
 class Brain(object):
 
@@ -190,5 +191,6 @@ class Brain(object):
 		#else:
 		#	l = self.groupCustomerForWhatsapp(dbUpdateObject,sessionObject,item);
 		#	botResponse = l[0]
-
+		tts = gTTS(text=botResponse, lang='en', slow=True);
+		tts.save('./../../test.mp3');
 		dumpObject.dump(dbUpdateObject,botResponse,item);
