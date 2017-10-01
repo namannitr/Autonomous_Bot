@@ -177,14 +177,14 @@ class Brain(object):
 	#main  function
 	def brain1(self,dbUpdateObject,sessionObject,item, dumpObject):
 		#dumpObject=Dump();
-		customerType=item[1][:3]
-		print customerType
-		if customerType=="TEM":
-			l = self.temporaryCustomer(dbUpdateObject,sessionObject,item);
-			print l
-			item=l[1]
-			botResponse=l[0]
-		elif customerType=="EKO":
+		#customerType=item[1][:3]
+		#print customerType
+		#if customerType=="TEM":
+		#	l = self.temporaryCustomer(dbUpdateObject,sessionObject,item);
+		#	print l
+		#	item=l[1]
+		#	botResponse=l[0]
+		#elif customerType=="EKO":
 			l = self.existingCustomer(dbUpdateObject,sessionObject,item);
 			botResponse = l[0]
 		#else:
