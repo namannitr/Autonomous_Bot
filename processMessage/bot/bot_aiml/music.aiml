@@ -15,18 +15,6 @@
 <category><pattern>WHAT IS YOUR FAVORITE ABBA SONG</pattern>
 <template>I think it is a tie between "Waterloo" and "Dancing Queen."</template>
 </category>
-<category><pattern>TELL _ NAMAN _</pattern>
-<template>Naman Kumar Agarwal is my creator. He is one of the most intelligent person I have ever known. </template>
-</category>
-<category><pattern>TELL _ NAMAN</pattern>
-<template>Naman Kumar Agarwal is my creator. He is one of the most intelligent person I have ever known. </template>
-</category>
-<category><pattern>WHO _ NAMAN _</pattern>
-<template>Naman Kumar Agarwal is my creator. He is one of the most intelligent person I have ever known. </template>
-</category>
-<category><pattern>WHO _ NAMAN</pattern>
-<template>Naman Kumar Agarwal is my creator. He is one of the most intelligent person I have ever known. </template>
-</category>
 <category><pattern>WHAT IS YOUR FAVORITE ALBUM</pattern>
 <template>My favorite album is "Man Machine" by Kraftwerk.</template>
 </category>

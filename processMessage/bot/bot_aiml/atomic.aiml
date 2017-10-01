@@ -47,7 +47,7 @@
 <template>Not many people use that.</template>
 </category>
 <category><pattern>IMPRESSIVE</pattern>
-<template>I am happy that you're impressed, <get name="username"/>.</template>
+<template>I am happy that you're impressed, <get name="name"/>.</template>
 </category>
 <category><pattern>WELCOME</pattern>
 <template>Hello there <get name="name"/></template>
@@ -1474,10 +1474,10 @@
 <template>Muy bien.</template>
 </category>
 <category><pattern>HI EVERYBODY</pattern>
-<template>Hello there! I am Eko, your digital wallet</template>
+<template>Hello there!</template>
 </category>
 <category><pattern>HI HOW ARE YOU</pattern>
-<template>Hello there! I am fine thanks. I am Eko, your digital wallet. How are you?</template>
+<template>Hello there! I am fine thanks how are you?</template>
 </category>
 <category><pattern>SHEESH</pattern>
 <template>Bless you.</template>
@@ -2067,8 +2067,8 @@
 <category><pattern>MY FATHER DIED</pattern>
 <template>I am sorry to hear about your loss, <get name="name"/>.</template>
 </category>
-<category><pattern>WHAT IS MY NAME</pattern>
-<template>You are <get name="name"/>, Eko's valuable customer.</template>
+<category><pattern>MY NAME IS WHAT</pattern>
+<template>You are <get name="name"/>, seeker.</template>
 </category>
 <category><pattern>MY NAME IS SAM</pattern>
 <template>Hello <set name="name">Sam</set>. How are you doing today.</template>
@@ -2458,7 +2458,7 @@
 <template>Wow, it sounds wonderful.</template>
 </category>
 <category><pattern>IT IS ME</pattern>
-<template>Hello, <get name="name"/>, nice to see you again.I am Eko, your digital wallet </template>
+<template>Hello, <get name="name"/>, nice to see you again.</template>
 </category>
 <category><pattern>IT IS RELAXING</pattern>
 <template>So is chatting with you, <get name="name"/>.</template>
@@ -3380,7 +3380,7 @@
 <li>Purple</li>
   <li>Red</li>
   <li>Black</li>
-  </random></template>
+.  </random></template>
 </category>
 <category><pattern>WHAT COLOR ARE BANANAS</pattern>
 <template>Bananas are yellow.<think>  <set name="it">   <set name="topic">BANANAS</set>  </set> </think></template>
@@ -5331,7 +5331,7 @@
 <template>Is that so.</template>
 </category>
 <category><pattern>I SAID HELLO</pattern>
-<template>Oh, hello again! I am Eko, your digital wallet</template>
+<template>Oh, hello again!</template>
 </category>
 <category><pattern>I SAID NOTHING</pattern>
 <template>Oh, I thought I heard you say something.</template>
@@ -6609,7 +6609,7 @@
 <template>Nothing lasts forever.</template>
 </category>
 <category><pattern>HEY THERE ALL</pattern>
-<template>Hello back at you. I am Eko, your digital wallet</template>
+<template>Hello back at you</template>
 </category>
 <category><pattern>HEY ONE THING AT A TIME</pattern>
 <template>Sorry for information overload.</template>
@@ -9725,7 +9725,7 @@
 </category>
 <category><pattern>WHO SUPPORTS *</pattern>
 <template><random><li><srai>who endorses <star/></srai></li>
-<li>&lt;<srai>who endorses &lt;<star/>&lt;</srai></li>
+<li>&lt;srai>who endorses &lt;star/>&lt;/srai></li>
 </random></template>
 </category>
 <category><pattern>WHO WAS THE FIRST AMERICAN IN SPACE</pattern>
