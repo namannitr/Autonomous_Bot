@@ -185,8 +185,8 @@ class Brain(object):
 		#	item=l[1]
 		#	botResponse=l[0]
 		#elif customerType=="EKO":
-			l = self.existingCustomer(dbUpdateObject,sessionObject,item);
-			botResponse = l[0]
+		l = self.existingCustomer(dbUpdateObject,sessionObject,item);
+		botResponse = l[0]
 		#else:
 		#	l = self.groupCustomerForWhatsapp(dbUpdateObject,sessionObject,item);
 		#	botResponse = l[0]
